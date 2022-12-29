@@ -1,7 +1,9 @@
 import { toast } from "react-toastify";
 import { Api } from "..";
+import { iAcessUser } from "../../Interface";
 
-async function UserLogin(formData, setLoad){
+async function UserLogin(formData:iAcessUser, setLoad){
+    
     try {
         setLoad(true)
 

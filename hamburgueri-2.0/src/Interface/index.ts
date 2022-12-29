@@ -2,6 +2,7 @@ export interface iAcessUser {
   name?: string;
   email: string;
   password: number;
+  confirmPassword:number;
 }
 
 export interface iRespApiUser {
