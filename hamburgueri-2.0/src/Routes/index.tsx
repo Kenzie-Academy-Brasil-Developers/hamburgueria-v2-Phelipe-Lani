@@ -4,7 +4,7 @@ export function RoutMain (){
 
     return(
         <Routes>
-            <Route  path="/"/>
+            <Route  path="/" element/>
             <Route  path="/register"/>
             <Route  path="/dashpage"/>
             <Route  path="*"/>

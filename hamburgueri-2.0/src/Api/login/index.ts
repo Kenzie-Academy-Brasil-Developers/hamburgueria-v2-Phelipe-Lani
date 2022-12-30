@@ -2,16 +2,16 @@ import { toast } from "react-toastify";
 import { Api } from "..";
 import { iAcessUser } from "../../Interface";
 
-async function UserLogin(formData:iAcessUser, setLoad){
+async function UserLogin(formData:iAcessUser, ){
     
     try {
-        setLoad(true)
+        
 
         const response = await Api.post("/login", formData);
 
-        const { token, user } = response.data;
+        const { token,  } = response.data;
 
-        setUsuario(user);
+   
 
         localStorage.setItem("Token-Hamburg_2.0", token);
         
@@ -21,6 +21,7 @@ async function UserLogin(formData:iAcessUser, setLoad){
         
     }finally{
         setLoad(false)
+
     }
 
 }
