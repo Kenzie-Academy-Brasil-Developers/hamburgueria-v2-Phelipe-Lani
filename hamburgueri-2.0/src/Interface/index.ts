@@ -1,22 +1,20 @@
-export interface iAcessUser {
-  name?: string;
-  email: string;
-  password: number;
-}
-
-export interface iRespApiUser {
+export interface iRespApi {
   accessToken: string;
-  user: {
-    email: string;
-    name: string;
-    id: number;
-  };
+  user: iApiUser;
 }
 
-export interface iProduct{
-    id:number,
-    name:string,
-    category:string,
-    price:number,
-    img:string
+export interface iApiUser {
+  email: string;
+  name: string;
+  id: number;
 }
+
+export interface iItens {
+  id: number;
+  name: string;
+  category: string;
+  price: number;
+  img: string;
+}
+
+
